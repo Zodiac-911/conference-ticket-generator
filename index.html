@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-element-container">
+      <img class="b-e left" src="assets/images/pattern-circle.svg" alt="" />
+      <img class="b-e center" src="assets/images/pattern-circle.svg" alt="" />
+      <img
+        class="b-e bottom"
+        src="assets/images/pattern-squiggly-line-bottom-desktop.svg"
+        alt=""
+      />
+      <img
+        class="b-e right"
+        src="assets/images/pattern-squiggly-line-top.svg"
+        alt=""
+      />
+    </div>
+    <div class="head-logo">
+      <img src="assets/images/logo-full.svg" alt="" />
+    </div>
+    <div class="step-1 " id="step-1">
+      <div class="head-text">
+        <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+        <h4>Secure your spot at next year's biggest coding conference.</h4>
+      </div>
+      <form>
+        <label for="avater">Upload Avatar</label>
+        <div>
+          <label for="file" class="avatar-input" id="fileIInput">
+            <input type="file" id="file" accept=".jpg,.jpeg,.png">
+            <label for="file"></label>
+            <p>Drag and drop or click to upload</p>
+          </label>
+          <p id="error-message" style="color: red; display: none;"></p>
+          <div class="avatar-input-info">
+            <img src="assets/images/icon-info.svg" alt="" /><span>
+              Upload your photo (JPG or PNG, max size: 500KB).</span
+            >
+          </div>
+        </div>
+        <label for="Full name">Full Name</label>
+        <input type="text" id="fullName"/>
+        <label for="email">Email Address</label>
+        <input type="email" name="" id="" />
+        <label for="GitHubusername">GitHub Username</label>
+        <input type="text" />
+        <button>Generate My Ticket</button>
+
+      </form>
+    </div>
+    <div class="step-2 hidden" id="step-2">
+      <div class="head-text">
+        <h1>
+          Congrats,
+          <span id="Name">Jonatan Kristof</span>! Your ticket is ready.
+        </h1>
+        <h4>
+          We've emailed your ticket to
+          <span>jonatan@email.com</span>
+          and will send updates in the run up to the event.
+        </h4>
+        <div class="ticket">
+          <div class="ticket-left">
+            <div class="ticket-top">
+              <img src="assets/images/logo-mark.svg" alt="">
+              <div>
+                <h1>Coding Conf</h1>
+                <p>Jan 31, 2025 / Austin, TX</p>
+              </div>
+            </div>
+            <div class="ticket-bottom">
+              <img id="userPictur" src="assets/images/image-avatar.jpg" alt="">
+              <div><h2 id="Name">Jonatan Kristof</h2>
+              <p id="gitHubUserName"><img src="assets/images/icon-github.svg" alt="">@jonatankristof0101</p></div>
+            </div>
+          </div>
+          <div class="ticket-right"><p>#01609</p></div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
