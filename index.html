@@ -41,7 +41,7 @@
         <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
         <h4>Secure your spot at next year's biggest coding conference.</h4>
       </div>
-      <form>
+      <form id="Form">
         <label for="avater">Upload Avatar</label>
         <div>
           <label for="file" class="avatar-input" id="fileIInput">
@@ -56,13 +56,13 @@
             >
           </div>
         </div>
-        <label for="Full name">Full Name</label>
-        <input type="text" id="fullName"/>
-        <label for="email">Email Address</label>
-        <input type="email" name="" id="" />
-        <label for="GitHubusername">GitHub Username</label>
-        <input type="text" />
-        <button>Generate My Ticket</button>
+        <label for="fullName">Full Name</label>
+        <input required type="text" id="fullName"/>
+        <label for="email" >Email Address</label>
+        <input type="email"  id="email" required />
+        <label for="github">GitHub Username</label>
+        <input required type="text" id="github"/>
+        <button type="submit">Generate My Ticket</button>
 
       </form>
     </div>
@@ -70,11 +70,11 @@
       <div class="head-text">
         <h1>
           Congrats,
-          <span id="Name">Jonatan Kristof</span>! Your ticket is ready.
+          <span  class="fullName">Jonatan Kristof</span>! Your ticket is ready.
         </h1>
         <h4>
           We've emailed your ticket to
-          <span>jonatan@email.com</span>
+          <span class="email">jonatan@email.com</span>
           and will send updates in the run up to the event.
         </h4>
         <div class="ticket">
@@ -88,8 +88,8 @@
             </div>
             <div class="ticket-bottom">
               <img id="userPictur" src="assets/images/image-avatar.jpg" alt="">
-              <div><h2 id="Name">Jonatan Kristof</h2>
-              <p id="gitHubUserName"><img src="assets/images/icon-github.svg" alt="">@jonatankristof0101</p></div>
+              <div><h2 class="fullName">Jonatan Kristof</h2>
+              <p  class="gitHubUserName"><img src="assets/images/icon-github.svg" alt=""><span class="github">@jonatankristof0101</span></p></div>
             </div>
           </div>
           <div class="ticket-right"><p>#01609</p></div>

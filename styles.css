@@ -224,11 +224,11 @@ form button:hover {
   height: 80px;
   border-radius: 16px;
 }
-#gitHubUserName {
+.gitHubUserName {
   display: flex;
   gap: 8px;
 }
-#gitHubUserName img {
+.gitHubUserName img {
   height: 20px;
   width: 20px;
 }
